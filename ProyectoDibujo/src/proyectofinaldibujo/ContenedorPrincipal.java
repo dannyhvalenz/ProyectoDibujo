@@ -83,7 +83,8 @@ public class ContenedorPrincipal extends Stage {
         linea1.setEndY(495);
         linea1.setStrokeWidth(2);
         linea1.setStroke(Color.RED);
-        
+        root.getChildren().add(linea1);
+                
         Line linea2 = new Line();
         linea2.setStartX(51);
         linea2.setStartY(210);
@@ -91,9 +92,25 @@ public class ContenedorPrincipal extends Stage {
         linea2.setEndY(111);
         linea2.setStrokeWidth(2);
         linea2.setStroke(Color.RED);
+        root.getChildren().add(linea2);
         
-        root.getChildren().addAll(linea1, linea2);
+        Line linea3 = new Line();
+        linea3.setStartX(51);
+        linea3.setStartY(288);
+        linea3.setEndX(214);
+        linea3.setEndY(372);
+        linea3.setStrokeWidth(2);
+        linea3.setStroke(Color.RED);
+        root.getChildren().add(linea3);
         
+        Line linea4 = new Line();
+        linea4.setStartX(133);
+        linea4.setStartY(399);
+        linea4.setEndX(214);
+        linea4.setEndY(374);
+        linea4.setStrokeWidth(2);
+        linea4.setStroke(Color.RED);
+        root.getChildren().add(linea4);
     }
 
     private void configurarCurvas() {
