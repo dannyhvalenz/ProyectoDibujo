@@ -7,8 +7,10 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.CubicCurve;
 import javafx.scene.shape.Ellipse;
 import javafx.scene.shape.Line;
+import javafx.scene.shape.QuadCurve;
 import javafx.stage.Stage;
 
 /**
@@ -21,7 +23,10 @@ public class ContenedorPrincipal extends Stage {
     public ContenedorPrincipal () {
         root = new AnchorPane();
         Scene scene = new Scene(root, 560, 490);
+        scene.getStylesheets().add(getClass().getResource("/view/styles.css").toExternalForm());
         setScene(scene);
+        
+        root.getStyleClass().add("fondo");
         
         configurarComponentes();
         configurarLineasRectas();
@@ -46,6 +51,7 @@ public class ContenedorPrincipal extends Stage {
         
         btnDibujar = new JFXButton();
         btnDibujar.setText("Dibujar");
+        btnDibujar.getStyleClass().add("dibujar");
         btnDibujar.setLayoutX(10);
         btnDibujar.setLayoutY(10);
         btnDibujar.setOnAction(evt -> {
@@ -57,9 +63,12 @@ public class ContenedorPrincipal extends Stage {
         
         btnComparar = new JFXButton();
         btnComparar.setText("Comparar");
+        btnComparar.getStyleClass().add("comparar");
         btnComparar.setLayoutX(100);
         btnComparar.setLayoutY(10);
         btnComparar.setOnAction(evt -> {
+            imagenPrueba.setVisible(false);
+            
             ImageView imagenOriginal = new ImageView();
             imagenOriginal.setImage(new Image("/resources/phineasyferb.png"));
             imagenOriginal.setLayoutX(290);
@@ -196,7 +205,127 @@ public class ContenedorPrincipal extends Stage {
     }
 
     private void configurarCurvas() {
+        QuadCurve curva1 = new QuadCurve();
+        curva1.setStartX(91);
+        curva1.setStartY(344);
+        curva1.setEndX(133);
+        curva1.setEndY(398);
+        curva1.setControlX(120);
+        curva1.setControlY(394);
+        curva1.setStrokeWidth(2);
+        curva1.setStroke(Color.RED);
+        curva1.setFill(Color.TRANSPARENT);
+        root.getChildren().add(curva1);
         
+        QuadCurve curva2 = new QuadCurve();
+        curva2.setStartX(90);
+        curva2.setStartY(344);
+        curva2.setEndX(100);
+        curva2.setEndY(408);
+        curva2.setControlX(80);
+        curva2.setControlY(390);
+        curva2.setStrokeWidth(2);
+        curva2.setStroke(Color.RED);
+        curva2.setFill(Color.TRANSPARENT);
+        root.getChildren().add(curva2);
+        
+        QuadCurve curva3 = new QuadCurve();
+        curva3.setStartX(51);
+        curva3.setStartY(321);
+        curva3.setEndX(59);
+        curva3.setEndY(403);
+        curva3.setControlX(70);
+        curva3.setControlY(380);
+        curva3.setStrokeWidth(2);
+        curva3.setStroke(Color.RED);
+        curva3.setFill(Color.TRANSPARENT);
+        root.getChildren().add(curva3);
+        
+        QuadCurve curva4 = new QuadCurve();
+        curva4.setStartX(132);
+        curva4.setStartY(228);
+        curva4.setEndX(156);
+        curva4.setEndY(194);
+        curva4.setControlX(150);
+        curva4.setControlY(220);
+        curva4.setStrokeWidth(2);
+        curva4.setStroke(Color.RED);
+        curva4.setFill(Color.TRANSPARENT);
+        root.getChildren().add(curva4);
+        
+        QuadCurve curva5 = new QuadCurve();
+        curva5.setStartX(95);
+        curva5.setStartY(245);
+        curva5.setEndX(109);
+        curva5.setEndY(211);
+        curva5.setControlX(96);
+        curva5.setControlY(220);
+        curva5.setStrokeWidth(2);
+        curva5.setStroke(Color.RED);
+        curva5.setFill(Color.TRANSPARENT);
+        root.getChildren().add(curva5);
+        
+        QuadCurve curva6 = new QuadCurve();
+        curva6.setStartX(81);
+        curva6.setStartY(234);
+        curva6.setEndX(96);
+        curva6.setEndY(245);
+        curva6.setControlX(85);
+        curva6.setControlY(240);
+        curva6.setStrokeWidth(2);
+        curva6.setStroke(Color.RED);
+        curva6.setFill(Color.TRANSPARENT);
+        root.getChildren().add(curva6);
+        
+        QuadCurve curva7 = new QuadCurve();
+        curva7.setStartX(102);
+        curva7.setStartY(401);
+        curva7.setEndX(113);
+        curva7.setEndY(387);
+        curva7.setControlX(106);
+        curva7.setControlY(384);
+        curva7.setStrokeWidth(2);
+        curva7.setStroke(Color.RED);
+        curva7.setFill(Color.TRANSPARENT);
+        root.getChildren().add(curva7);
+        
+        QuadCurve curva8 = new QuadCurve();
+        curva8.setStartX(58);
+        curva8.setStartY(423);
+        curva8.setEndX(59);
+        curva8.setEndY(473);
+        curva8.setControlX(87);
+        curva8.setControlY(405);
+        curva8.setStrokeWidth(2);
+        curva8.setStroke(Color.RED);
+        curva8.setFill(Color.TRANSPARENT);
+        root.getChildren().add(curva8);
+        
+        QuadCurve lenguaP = new QuadCurve();
+        lenguaP.setStartX(87);
+        lenguaP.setStartY(367);
+        lenguaP.setEndX(97);
+        lenguaP.setEndY(395);
+        lenguaP.setControlX(100);
+        lenguaP.setControlY(370);
+        lenguaP.setStrokeWidth(2);
+        lenguaP.setStroke(Color.RED);
+        lenguaP.setFill(Color.TRANSPARENT);
+        root.getChildren().add(lenguaP);
+
+        CubicCurve ojoFerb2 = new CubicCurve();
+        ojoFerb2.setStartX(134);
+        ojoFerb2.setStartY(151);
+        ojoFerb2.setEndX(148);
+        ojoFerb2.setEndY(186);
+        ojoFerb2.setControlX1(152);
+        ojoFerb2.setControlY1(130);
+        ojoFerb2.setControlX2(180);
+        ojoFerb2.setControlY2(144);
+        ojoFerb2.setStrokeWidth(2);
+        ojoFerb2.setStroke(Color.RED);
+        ojoFerb2.setFill(Color.TRANSPARENT);
+        root.getChildren().add(ojoFerb2);
     }
 
     private void configurarElipses() {
@@ -207,6 +336,7 @@ public class ContenedorPrincipal extends Stage {
         ojoFerb1.setRadiusY(19);
         ojoFerb1.setFill(Color.WHITE);
         ojoFerb1.setStroke(Color.RED);
+        ojoFerb1.setFill(Color.TRANSPARENT);
         ojoFerb1.setStrokeWidth(2);
         
         root.getChildren().add(ojoFerb1);
