@@ -202,6 +202,15 @@ public class ContenedorPrincipal extends Stage {
         linea13.setStrokeWidth(2);
         linea13.setStroke(Color.RED);
         root.getChildren().add(linea13);
+        
+        Line linea14 = new Line();
+        linea14.setStartX(51);
+        linea14.setStartY(455);
+        linea14.setEndX(62);
+        linea14.setEndY(464);
+        linea14.setStrokeWidth(2);
+        linea14.setStroke(Color.RED);
+        root.getChildren().add(linea14);
     }
 
     private void configurarCurvas() {
@@ -326,6 +335,62 @@ public class ContenedorPrincipal extends Stage {
         ojoFerb2.setStroke(Color.RED);
         ojoFerb2.setFill(Color.TRANSPARENT);
         root.getChildren().add(ojoFerb2);
+        
+        CubicCurve orejaPhineas = new CubicCurve();
+        orejaPhineas.setStartX(67);
+        orejaPhineas.setStartY(357);
+        orejaPhineas.setEndX(65);
+        orejaPhineas.setEndY(345);
+        orejaPhineas.setControlX1(51);
+        orejaPhineas.setControlY1(375);
+        orejaPhineas.setControlX2(43);
+        orejaPhineas.setControlY2(334);
+        orejaPhineas.setStrokeWidth(2);
+        orejaPhineas.setStroke(Color.RED);
+        orejaPhineas.setFill(Color.WHITE);
+        root.getChildren().add(orejaPhineas);
+        
+        CubicCurve orejaFerb = new CubicCurve();
+        orejaFerb.setStartX(71);
+        orejaFerb.setStartY(175);
+        orejaFerb.setEndX(78);
+        orejaFerb.setEndY(159);
+        orejaFerb.setControlX1(44);
+        orejaFerb.setControlY1(172);
+        orejaFerb.setControlX2(69);
+        orejaFerb.setControlY2(141);
+        orejaFerb.setStrokeWidth(2);
+        orejaFerb.setStroke(Color.RED);
+        orejaFerb.setFill(Color.WHITE);
+        root.getChildren().add(orejaFerb);
+        
+        CubicCurve ojoPhineas2 = new CubicCurve();
+        ojoPhineas2.setStartX(158);
+        ojoPhineas2.setStartY(342);
+        ojoPhineas2.setEndX(129);
+        ojoPhineas2.setEndY(311);
+        ojoPhineas2.setControlX1(165);
+        ojoPhineas2.setControlY1(332);
+        ojoPhineas2.setControlX2(151);
+        ojoPhineas2.setControlY2(306);
+        ojoPhineas2.setStrokeWidth(2);
+        ojoPhineas2.setStroke(Color.RED);
+        ojoPhineas2.setFill(Color.TRANSPARENT);
+        root.getChildren().add(ojoPhineas2);
+        
+        CubicCurve cabelloFerb1 = new CubicCurve();
+        cabelloFerb1.setStartX(182);
+        cabelloFerb1.setStartY(168);
+        cabelloFerb1.setEndX(172);
+        cabelloFerb1.setEndY(85);
+        cabelloFerb1.setControlX1(212);
+        cabelloFerb1.setControlY1(123);
+        cabelloFerb1.setControlX2(186);
+        cabelloFerb1.setControlY2(86);
+        cabelloFerb1.setStrokeWidth(2);
+        cabelloFerb1.setStroke(Color.RED);
+        cabelloFerb1.setFill(Color.TRANSPARENT);
+        root.getChildren().add(cabelloFerb1);
     }
 
     private void configurarElipses() {
