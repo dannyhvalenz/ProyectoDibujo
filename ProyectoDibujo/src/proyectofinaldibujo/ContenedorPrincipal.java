@@ -34,11 +34,7 @@ public class ContenedorPrincipal extends Stage {
         root.getStyleClass().add("fondo");
         
         configurarComponentes();
-        configurarPared();
-        configurarPhineas();
-        configurarFerb();
-        //configurarCurvas();
-        //configurarElipses();
+        
     }
 
     private void configurarComponentes() {
@@ -48,23 +44,15 @@ public class ContenedorPrincipal extends Stage {
         panelDibujo.setLayoutX(0);
         panelDibujo.setLayoutY(50);
         
-        ImageView imagenPrueba = new ImageView();
-        imagenPrueba.setImage(new Image("/resources/phineasyferb.png"));
-        imagenPrueba.setLayoutX(0);
-        imagenPrueba.setLayoutY(0);
-        imagenPrueba.setFitHeight(445);
-        imagenPrueba.setFitWidth(270);
-        panelDibujo.getChildren().add(imagenPrueba);
-        
         btnDibujar = new JFXButton();
         btnDibujar.setText("Dibujar");
         btnDibujar.getStyleClass().add("dibujar");
         btnDibujar.setLayoutX(10);
         btnDibujar.setLayoutY(10);
         btnDibujar.setOnAction(evt -> {
-//            configurarLineasRectas();
-//            configurarCurvas();
-//            configurarElipses();
+            configurarPared();
+            configurarPhineas();
+            configurarFerb();
         });
         
         
@@ -74,8 +62,6 @@ public class ContenedorPrincipal extends Stage {
         btnComparar.setLayoutX(100);
         btnComparar.setLayoutY(10);
         btnComparar.setOnAction(evt -> {
-            imagenPrueba.setVisible(false);
-            
             ImageView imagenOriginal = new ImageView();
             imagenOriginal.setImage(new Image("/resources/phineasyferb.png"));
             imagenOriginal.setLayoutX(290);
@@ -196,7 +182,7 @@ public class ContenedorPrincipal extends Stage {
         root.getChildren().add(camisaPhineas1);
         
         Line rayaCamisaPhineas1 = new Line();
-        rayaCamisaPhineas1.setStartX(54);
+        rayaCamisaPhineas1.setStartX(53);
         rayaCamisaPhineas1.setStartY(432);
         rayaCamisaPhineas1.setEndX(70);
         rayaCamisaPhineas1.setEndY(444);
@@ -206,10 +192,10 @@ public class ContenedorPrincipal extends Stage {
         root.getChildren().add(rayaCamisaPhineas1);
         
         Line rayaCamisaPhineas2 = new Line();
-        rayaCamisaPhineas2.setStartX(51);
+        rayaCamisaPhineas2.setStartX(53);
         rayaCamisaPhineas2.setStartY(455);
         rayaCamisaPhineas2.setEndX(62);
-        rayaCamisaPhineas2.setEndY(464);
+        rayaCamisaPhineas2.setEndY(461);
         rayaCamisaPhineas2.setStrokeWidth(2);
         rayaCamisaPhineas2.setStroke(Color.rgb(240,155,0));
         root.getChildren().add(rayaCamisaPhineas2);
@@ -462,6 +448,85 @@ public class ContenedorPrincipal extends Stage {
         cabelloPhineas6.setStroke(Color.RED);
         cabelloPhineas6.setFill(Color.TRANSPARENT);
         root.getChildren().add(cabelloPhineas6);
+        
+        // DEDOS PHINEAS
+        Ellipse dedoPhineas1 = new Ellipse(); 
+        dedoPhineas1.setCenterX(48);
+        dedoPhineas1.setCenterY(369);
+        dedoPhineas1.setRadiusX(8);
+        dedoPhineas1.setRadiusY(4);
+        //dedoPhineas1.setFill(Color.rgb(252,227,199));
+        dedoPhineas1.setFill(Color.WHITE);
+        //dedoPhineas1.setStroke(Color.RED);
+        dedoPhineas1.setStroke(Color.rgb(251,193,137));
+        dedoPhineas1.setStrokeWidth(1.7);
+        dedoPhineas1.setRotate(5);
+        root.getChildren().add(dedoPhineas1);
+        
+        Ellipse dedoPhineas2 = new Ellipse(); 
+        dedoPhineas2.setCenterX(46.5);
+        dedoPhineas2.setCenterY(377);
+        dedoPhineas2.setRadiusX(9);
+        dedoPhineas2.setRadiusY(5);
+        //dedoPhineas2.setFill(Color.rgb(252,227,199));
+        dedoPhineas2.setFill(Color.WHITE);
+        //dedoPhineas2.setStroke(Color.RED);
+        dedoPhineas2.setStroke(Color.rgb(251,193,137));
+        dedoPhineas2.setStrokeWidth(1.7);
+        dedoPhineas2.setRotate(355);
+        root.getChildren().add(dedoPhineas2);
+        
+        Ellipse dedoPhineas3 = new Ellipse(); 
+        dedoPhineas3.setCenterX(48);
+        dedoPhineas3.setCenterY(385);
+        dedoPhineas3.setRadiusX(8);
+        dedoPhineas3.setRadiusY(4);
+        //dedoPhineas3.setFill(Color.rgb(252,227,199));
+        dedoPhineas3.setFill(Color.WHITE);
+        //dedoPhineas3.setStroke(Color.RED);
+        dedoPhineas3.setStroke(Color.rgb(251,193,137));
+        dedoPhineas3.setStrokeWidth(1.7);
+        dedoPhineas3.setRotate(350);
+        root.getChildren().add(dedoPhineas3);
+        
+        Ellipse dedoPhineas4 = new Ellipse(); 
+        dedoPhineas4.setCenterX(48);
+        dedoPhineas4.setCenterY(402.5);
+        dedoPhineas4.setRadiusX(8);
+        dedoPhineas4.setRadiusY(4);
+        //dedoPhineas4.setFill(Color.rgb(252,227,199));
+        dedoPhineas4.setFill(Color.WHITE);
+        //dedoPhineas4.setStroke(Color.RED);
+        dedoPhineas4.setStroke(Color.rgb(251,193,137));
+        dedoPhineas4.setStrokeWidth(1.7);
+        dedoPhineas4.setRotate(355);
+        root.getChildren().add(dedoPhineas4);
+        
+        Ellipse dedoPhineas5 = new Ellipse(); 
+        dedoPhineas5.setCenterX(46.5);
+        dedoPhineas5.setCenterY(412);
+        dedoPhineas5.setRadiusX(9);
+        dedoPhineas5.setRadiusY(5);
+        //dedoPhineas5.setFill(Color.rgb(252,227,199));
+        dedoPhineas5.setFill(Color.WHITE);
+        //dedoPhineas5.setStroke(Color.RED);
+        dedoPhineas5.setStroke(Color.rgb(251,193,137));
+        dedoPhineas5.setStrokeWidth(1.7);
+        dedoPhineas5.setRotate(348);
+        root.getChildren().add(dedoPhineas5);
+        
+        Ellipse dedoPhineas6 = new Ellipse(); 
+        dedoPhineas6.setCenterX(48);
+        dedoPhineas6.setCenterY(420);
+        dedoPhineas6.setRadiusX(8);
+        dedoPhineas6.setRadiusY(4);
+        //dedoPhineas6.setFill(Color.rgb(252,227,199));
+        dedoPhineas6.setFill(Color.WHITE);
+        //dedoPhineas6.setStroke(Color.RED);
+        dedoPhineas6.setStroke(Color.rgb(251,193,137));
+        dedoPhineas6.setStrokeWidth(1.7);
+        dedoPhineas6.setRotate(350);
+        root.getChildren().add(dedoPhineas6);
     }
     
     private void configurarFerb() {        
@@ -576,7 +641,8 @@ public class ContenedorPrincipal extends Stage {
         ojoFerb1.setFill(Color.WHITE);
         ojoFerb1.setStroke(Color.BLACK);
         ojoFerb1.setFill(Color.TRANSPARENT);
-        ojoFerb1.setStrokeWidth(1);
+        ojoFerb1.setStrokeWidth(1.7);
+        ojoFerb1.setRotate(20);
         
         CubicCurve ojoFerb2 = new CubicCurve();
         ojoFerb2.setStartX(134);
@@ -587,19 +653,28 @@ public class ContenedorPrincipal extends Stage {
         ojoFerb2.setControlY1(130);
         ojoFerb2.setControlX2(180);
         ojoFerb2.setControlY2(144);
-        ojoFerb2.setStrokeWidth(1.3);
+        ojoFerb2.setStrokeWidth(1.7);
         ojoFerb2.setStroke(Color.BLACK);
         ojoFerb2.setFill(Color.TRANSPARENT);
         
         Ellipse pupilaFerb1 = new Ellipse();
         pupilaFerb1.setCenterX(112);
         pupilaFerb1.setCenterY(157);
-        pupilaFerb1.setRadiusX(3);
+        pupilaFerb1.setRadiusX(3.5);
         pupilaFerb1.setRadiusY(4.5);
         pupilaFerb1.setStroke(Color.MIDNIGHTBLUE);
         pupilaFerb1.setFill(Color.MIDNIGHTBLUE);
         pupilaFerb1.setStrokeWidth(2);
         pupilaFerb1.setRotate(27);
+        
+        Ellipse pupilaBlancaFerb1 = new Ellipse();
+        pupilaBlancaFerb1.setCenterX(111);
+        pupilaBlancaFerb1.setCenterY(156);
+        pupilaBlancaFerb1.setRadiusX(.2);
+        pupilaBlancaFerb1.setRadiusY(.2);
+        pupilaBlancaFerb1.setStroke(Color.WHITE);
+        pupilaBlancaFerb1.setFill(Color.WHITE);
+        pupilaBlancaFerb1.setStrokeWidth(2);
         
         Ellipse pupilaFerb2 = new Ellipse();
         pupilaFerb2.setCenterX(137);
@@ -611,8 +686,17 @@ public class ContenedorPrincipal extends Stage {
         pupilaFerb2.setStrokeWidth(2);
         pupilaFerb2.setRotate(25);
         
+        Ellipse pupilaBlancaFerb2 = new Ellipse();
+        pupilaBlancaFerb2.setCenterX(137);
+        pupilaBlancaFerb2.setCenterY(166);
+        pupilaBlancaFerb2.setRadiusX(.2);
+        pupilaBlancaFerb2.setRadiusY(.2);
+        pupilaBlancaFerb2.setStroke(Color.WHITE);
+        pupilaBlancaFerb2.setFill(Color.WHITE);
+        pupilaBlancaFerb2.setStrokeWidth(2);
+        
         Group ojosFerb = new Group();
-        ojosFerb.getChildren().addAll(ojoFerb1, ojoFerb2,pupilaFerb1, pupilaFerb2);
+        ojosFerb.getChildren().addAll(ojoFerb1, ojoFerb2, pupilaFerb1, pupilaFerb2, pupilaBlancaFerb1, pupilaBlancaFerb2);
         root.getChildren().add(ojosFerb);
         
         // CABELLO FERB
@@ -795,5 +879,84 @@ public class ContenedorPrincipal extends Stage {
         cabelleraFerb.getChildren().addAll(cabelloFerb14);
         
         root.getChildren().add(cabelleraFerb);
+        
+        // DEDOS PHINEAS
+        Ellipse dedoFerb1 = new Ellipse(); 
+        dedoFerb1.setCenterX(53);
+        dedoFerb1.setCenterY(190);
+        dedoFerb1.setRadiusX(10);
+        dedoFerb1.setRadiusY(8);
+        //dedoFerb1.setFill(Color.rgb(252,227,199));
+        dedoFerb1.setFill(Color.WHITE);
+        //dedoFerb1.setStroke(Color.RED);
+        dedoFerb1.setStroke(Color.rgb(251,193,137));
+        dedoFerb1.setStrokeWidth(1.7);
+        dedoFerb1.setRotate(328);
+        root.getChildren().add(dedoFerb1);
+        
+        Ellipse dedoFerb2 = new Ellipse(); 
+        dedoFerb2.setCenterX(50);
+        dedoFerb2.setCenterY(200);
+        dedoFerb2.setRadiusX(9);
+        dedoFerb2.setRadiusY(5.5);
+        //dedoFerb2.setFill(Color.rgb(252,227,199));
+        dedoFerb2.setFill(Color.WHITE);
+        //dedoFerb2.setStroke(Color.RED);
+        dedoFerb2.setStroke(Color.rgb(251,193,137));
+        dedoFerb2.setStrokeWidth(1.7);
+        dedoFerb2.setRotate(345);
+        root.getChildren().add(dedoFerb2);
+        
+        Ellipse dedoFerb3 = new Ellipse(); 
+        dedoFerb3.setCenterX(52);
+        dedoFerb3.setCenterY(210);
+        dedoFerb3.setRadiusX(9);
+        dedoFerb3.setRadiusY(6);
+        //dedoFerb3.setFill(Color.rgb(252,227,199));
+        dedoFerb3.setFill(Color.WHITE);
+        dedoFerb3.setStroke(Color.rgb(251,193,137));
+        //dedoFerb3.setStroke(Color.rgb(251,193,137));
+        dedoFerb3.setStrokeWidth(1.7);
+        dedoFerb3.setRotate(350);
+        root.getChildren().add(dedoFerb3);
+        
+        Ellipse dedoFerb4 = new Ellipse(); 
+        dedoFerb4.setCenterX(53);
+        dedoFerb4.setCenterY(232);
+        dedoFerb4.setRadiusX(10);
+        dedoFerb4.setRadiusY(8);
+        //dedoFerb4.setFill(Color.rgb(252,227,199));
+        dedoFerb4.setFill(Color.WHITE);
+        //dedoFerb4.setStroke(Color.RED);
+        dedoFerb4.setStroke(Color.rgb(251,193,137));
+        dedoFerb4.setStrokeWidth(1.7);
+        dedoFerb4.setRotate(5);
+        root.getChildren().add(dedoFerb4);
+        
+        Ellipse dedoFerb5 = new Ellipse(); 
+        dedoFerb5.setCenterX(50);
+        dedoFerb5.setCenterY(240);
+        dedoFerb5.setRadiusX(9);
+        dedoFerb5.setRadiusY(5.5);
+        //dedoFerb5.setFill(Color.rgb(252,227,199));
+        dedoFerb5.setFill(Color.WHITE);
+        //dedoFerb5.setStroke(Color.RED);
+        dedoFerb5.setStroke(Color.rgb(251,193,137));
+        dedoFerb5.setStrokeWidth(1.7);
+        dedoFerb5.setRotate(345);
+        root.getChildren().add(dedoFerb5);
+        
+        Ellipse dedoFerb6 = new Ellipse(); 
+        dedoFerb6.setCenterX(52);
+        dedoFerb6.setCenterY(250);
+        dedoFerb6.setRadiusX(9);
+        dedoFerb6.setRadiusY(6);
+        //dedoFerb6.setFill(Color.rgb(252,227,199));
+        dedoFerb6.setFill(Color.WHITE);
+        dedoFerb6.setStroke(Color.rgb(251,193,137));
+        //dedoFerb6.setStroke(Color.rgb(251,193,137));
+        dedoFerb6.setStrokeWidth(1.7);
+        dedoFerb6.setRotate(350);
+        root.getChildren().add(dedoFerb6);
     }
 }
