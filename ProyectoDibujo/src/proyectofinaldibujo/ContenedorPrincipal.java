@@ -53,8 +53,8 @@ public class ContenedorPrincipal extends Stage {
         btnDibujar.setLayoutY(10);
         btnDibujar.setOnAction(evt -> {
             configurarPared();
-            configurarPhineas();
             configurarFerb();
+            configurarPhineas();
         });
         
         
@@ -214,7 +214,7 @@ public class ContenedorPrincipal extends Stage {
         siluetaPhineas.getElements().add(cerrarSilueta);
         
         siluetaPhineas.setStrokeWidth(2);
-        siluetaPhineas.setStroke(Color.rgb(251,193,137));
+        siluetaPhineas.setStroke(Color.rgb(197,120,0));
         siluetaPhineas.setFill(Color.rgb(254,225,200));
         
         root.getChildren().add(siluetaPhineas);
@@ -229,7 +229,7 @@ public class ContenedorPrincipal extends Stage {
         orejaPhineas.setControlX2(43);
         orejaPhineas.setControlY2(334);
         orejaPhineas.setStrokeWidth(2);
-        orejaPhineas.setStroke(Color.rgb(251,193,137));
+        orejaPhineas.setStroke(Color.rgb(197,120,0));
         orejaPhineas.setFill(Color.rgb(254,225,200));
         root.getChildren().add(orejaPhineas);
         
@@ -496,14 +496,74 @@ public class ContenedorPrincipal extends Stage {
         
         root.getChildren().add(cabelloPhineas);
         
+        Path cejaPhineas1 = new Path();
+        ClosePath cerrarCeja1 = new ClosePath();
+        
+        MoveTo moveToCeja1 = new MoveTo();
+        moveToCeja1.setX(102);
+        moveToCeja1.setY(296);
+        
+        QuadCurveTo lineaceja1 = new QuadCurveTo();
+        lineaceja1.setX(123);
+        lineaceja1.setY(294);
+        lineaceja1.setControlX(118);
+        lineaceja1.setControlY(292);
+        
+        QuadCurveTo lineaceja2 = new QuadCurveTo();
+        lineaceja2.setX(102);
+        lineaceja2.setY(296);
+        lineaceja2.setControlX(114);
+        lineaceja2.setControlY(289);
+        
+        cejaPhineas1.getElements().add(moveToCeja1);
+        cejaPhineas1.getElements().add(lineaceja1);
+        cejaPhineas1.getElements().add(lineaceja2);
+        cejaPhineas1.getElements().add(cerrarCeja1);
+        
+        cejaPhineas1.setStrokeWidth(1);
+        cejaPhineas1.setStroke(Color.rgb(167,33,15));
+        cejaPhineas1.setFill(Color.rgb(229,96, 58));
+        
+        root.getChildren().add(cejaPhineas1);
+        
+        Path cejaPhineas2 = new Path();
+        ClosePath cerrarCeja2 = new ClosePath();
+        
+        MoveTo moveToCeja2 = new MoveTo();
+        moveToCeja2.setX(145);
+        moveToCeja2.setY(299);
+        
+        QuadCurveTo lineaceja3 = new QuadCurveTo();
+        lineaceja3.setX(156);
+        lineaceja3.setY(310);
+        lineaceja3.setControlX(149.5);
+        lineaceja3.setControlY(300);
+        
+        QuadCurveTo lineaceja4 = new QuadCurveTo();
+        lineaceja4.setX(145);
+        lineaceja4.setY(299);
+        lineaceja4.setControlX(150);
+        lineaceja4.setControlY(295);
+        
+        cejaPhineas2.getElements().add(moveToCeja2);
+        cejaPhineas2.getElements().add(lineaceja3);
+        cejaPhineas2.getElements().add(lineaceja4);
+        cejaPhineas2.getElements().add(cerrarCeja2);
+        
+        cejaPhineas2.setStrokeWidth(1);
+        cejaPhineas2.setStroke(Color.rgb(167,33,15));
+        cejaPhineas2.setFill(Color.rgb(229,96, 58));
+        
+        root.getChildren().add(cejaPhineas2);
+        
         // DEDOS PHINEAS
         Ellipse dedoPhineas1 = new Ellipse(); 
         dedoPhineas1.setCenterX(48);
         dedoPhineas1.setCenterY(369);
         dedoPhineas1.setRadiusX(8);
         dedoPhineas1.setRadiusY(4);
-        dedoPhineas1.setFill(Color.rgb(254,225,200));
         dedoPhineas1.setStroke(Color.rgb(251,193,137));
+        dedoPhineas1.setFill(Color.rgb(254,225,200));
         dedoPhineas1.setStrokeWidth(1.7);
         dedoPhineas1.setRotate(5);
         root.getChildren().add(dedoPhineas1);
@@ -513,8 +573,8 @@ public class ContenedorPrincipal extends Stage {
         dedoPhineas2.setCenterY(377);
         dedoPhineas2.setRadiusX(9);
         dedoPhineas2.setRadiusY(5);
-        dedoPhineas2.setFill(Color.rgb(254,225,200));
         dedoPhineas2.setStroke(Color.rgb(251,193,137));
+        dedoPhineas2.setFill(Color.rgb(254,225,200));
         dedoPhineas2.setStrokeWidth(1.7);
         dedoPhineas2.setRotate(355);
         root.getChildren().add(dedoPhineas2);
@@ -524,8 +584,8 @@ public class ContenedorPrincipal extends Stage {
         dedoPhineas3.setCenterY(385);
         dedoPhineas3.setRadiusX(8);
         dedoPhineas3.setRadiusY(4);
-        dedoPhineas3.setFill(Color.rgb(254,225,200));
         dedoPhineas3.setStroke(Color.rgb(251,193,137));
+        dedoPhineas3.setFill(Color.rgb(254,225,200));
         dedoPhineas3.setStrokeWidth(1.7);
         dedoPhineas3.setRotate(350);
         root.getChildren().add(dedoPhineas3);
@@ -535,8 +595,8 @@ public class ContenedorPrincipal extends Stage {
         dedoPhineas4.setCenterY(402.5);
         dedoPhineas4.setRadiusX(8);
         dedoPhineas4.setRadiusY(4);
-        dedoPhineas4.setFill(Color.rgb(254,225,200));
         dedoPhineas4.setStroke(Color.rgb(251,193,137));
+        dedoPhineas4.setFill(Color.rgb(254,225,200));
         dedoPhineas4.setStrokeWidth(1.7);
         dedoPhineas4.setRotate(355);
         root.getChildren().add(dedoPhineas4);
@@ -546,8 +606,8 @@ public class ContenedorPrincipal extends Stage {
         dedoPhineas5.setCenterY(412);
         dedoPhineas5.setRadiusX(9);
         dedoPhineas5.setRadiusY(5);
-        dedoPhineas5.setFill(Color.rgb(254,225,200));
         dedoPhineas5.setStroke(Color.rgb(251,193,137));
+        dedoPhineas5.setFill(Color.rgb(254,225,200));
         dedoPhineas5.setStrokeWidth(1.7);
         dedoPhineas5.setRotate(348);
         root.getChildren().add(dedoPhineas5);
@@ -557,117 +617,107 @@ public class ContenedorPrincipal extends Stage {
         dedoPhineas6.setCenterY(420);
         dedoPhineas6.setRadiusX(8);
         dedoPhineas6.setRadiusY(4);
-        dedoPhineas6.setFill(Color.rgb(254,225,200));
         dedoPhineas6.setStroke(Color.rgb(251,193,137));
+        dedoPhineas6.setFill(Color.rgb(254,225,200));
         dedoPhineas6.setStrokeWidth(1.7);
         dedoPhineas6.setRotate(350);
         root.getChildren().add(dedoPhineas6);
     }
     
-    private void configurarFerb() {        
-        // NARIZ FERB
-        QuadCurve puntaNarizFerb = new QuadCurve();
-        puntaNarizFerb.setStartX(132);
-        puntaNarizFerb.setStartY(228);
-        puntaNarizFerb.setEndX(156);
-        puntaNarizFerb.setEndY(194);
-        puntaNarizFerb.setControlX(150);
-        puntaNarizFerb.setControlY(220);
-        puntaNarizFerb.setStrokeWidth(2);
-        puntaNarizFerb.setStroke(Color.rgb(251,193,137));
-        puntaNarizFerb.setFill(Color.TRANSPARENT);
+    private void configurarFerb() {
         
-        Line narizArribaFerb = new Line();
-        narizArribaFerb.setStartX(125);
-        narizArribaFerb.setStartY(173);
-        narizArribaFerb.setEndX(156);
-        narizArribaFerb.setEndY(193);
-        narizArribaFerb.setStrokeWidth(2);
-        narizArribaFerb.setStroke(Color.rgb(251,193,137));
+        Path SiluetaFerb = new Path();
+        ClosePath cerrarSiluetaFerb = new ClosePath();
         
-        Line narizAbajoFerb = new Line();
-        narizAbajoFerb.setStartX(110);
-        narizAbajoFerb.setStartY(210);
-        narizAbajoFerb.setEndX(132);
-        narizAbajoFerb.setEndY(228);
-        narizAbajoFerb.setStrokeWidth(2);
-        narizAbajoFerb.setStroke(Color.rgb(251,193,137));
+        MoveTo moveToSilueta = new MoveTo();
+        moveToSilueta.setX(184);
+        moveToSilueta.setY(110);
         
+        LineTo frente = new LineTo();
+        frente.setX(142);
+        frente.setY(184);
         
-        // SILUETA FERB
-        Line cuelloFerb1 = new Line();
-        cuelloFerb1.setStartX(100);
-        cuelloFerb1.setStartY(111);
-        cuelloFerb1.setEndX(78);
-        cuelloFerb1.setEndY(158);
-        cuelloFerb1.setStrokeWidth(2);
-        cuelloFerb1.setStroke(Color.rgb(251,193,137));
+        LineTo narizArriba = new LineTo();
+        narizArriba.setX(156);
+        narizArriba.setY(193);
         
-        Line cuelloFerb2 = new Line();
-        cuelloFerb2.setStartX(69);
-        cuelloFerb2.setStartY(177);
-        cuelloFerb2.setEndX(64);
-        cuelloFerb2.setEndY(186);
-        cuelloFerb2.setStrokeWidth(2);
-        cuelloFerb2.setStroke(Color.rgb(251,193,137));
+        QuadCurveTo puntaNariz = new QuadCurveTo();
+        puntaNariz.setX(132);
+        puntaNariz.setY(228);
+        puntaNariz.setControlX(150);
+        puntaNariz.setControlY(220);
         
-        Line cuelloDelanteFerb = new Line();
-        cuelloDelanteFerb.setStartX(68);
-        cuelloDelanteFerb.setStartY(262);
-        cuelloDelanteFerb.setEndX(85);
-        cuelloDelanteFerb.setEndY(240);
-        cuelloDelanteFerb.setStrokeWidth(2);
-        cuelloDelanteFerb.setStroke(Color.rgb(251,193,137));
+        LineTo narizAbajo = new LineTo();
+        narizAbajo.setX(110);
+        narizAbajo.setY(210);
         
-        Line frenteFerb = new Line();
-        frenteFerb.setStartX(162);
-        frenteFerb.setStartY(149);
-        frenteFerb.setEndX(170);
-        frenteFerb.setEndY(136);
-        frenteFerb.setStrokeWidth(2);
-        frenteFerb.setStroke(Color.rgb(251,193,137));
+        QuadCurveTo narizBoca = new QuadCurveTo();
+        narizBoca.setX(95);
+        narizBoca.setY(245);
+        narizBoca.setControlX(96);
+        narizBoca.setControlY(220);
         
-        QuadCurve narizBocaFerb = new QuadCurve();
-        narizBocaFerb.setStartX(95);
-        narizBocaFerb.setStartY(245);
-        narizBocaFerb.setEndX(109);
-        narizBocaFerb.setEndY(211);
-        narizBocaFerb.setControlX(96);
-        narizBocaFerb.setControlY(220);
-        narizBocaFerb.setStrokeWidth(2);
-        narizBocaFerb.setStroke(Color.rgb(251,193,137));
-        narizBocaFerb.setFill(Color.TRANSPARENT);
+        QuadCurveTo labio = new QuadCurveTo();
+        labio.setX(85);
+        labio.setY(240);
+        labio.setControlX(85);
+        labio.setControlY(240);
         
-        QuadCurve labioFerb = new QuadCurve();
-        labioFerb.setStartX(81);
-        labioFerb.setStartY(234);
-        labioFerb.setEndX(96);
-        labioFerb.setEndY(245);
-        labioFerb.setControlX(85);
-        labioFerb.setControlY(240);
-        labioFerb.setStrokeWidth(2);
-        labioFerb.setStroke(Color.rgb(251,193,137));
-        labioFerb.setFill(Color.TRANSPARENT);
+        LineTo cuelloDelante = new LineTo();
+        cuelloDelante.setX(51);
+        cuelloDelante.setY(286);
         
-        CubicCurve orejaFerb = new CubicCurve();
-        orejaFerb.setStartX(71);
-        orejaFerb.setStartY(175);
-        orejaFerb.setEndX(78);
-        orejaFerb.setEndY(159);
-        orejaFerb.setControlX1(44);
-        orejaFerb.setControlY1(172);
-        orejaFerb.setControlX2(69);
-        orejaFerb.setControlY2(141);
-        orejaFerb.setStrokeWidth(2);
-        orejaFerb.setStroke(Color.rgb(251,193,137));
-        orejaFerb.setFill(Color.WHITE);
+        LineTo linea2 = new LineTo();
+        linea2.setX(52);
+        linea2.setY(210);
         
-        Group contornoFerb = new Group();
-        contornoFerb.getChildren().addAll(orejaFerb, labioFerb, narizBocaFerb, frenteFerb, cuelloDelanteFerb, 
-                cuelloFerb2, cuelloFerb1, narizAbajoFerb, narizArribaFerb, puntaNarizFerb);
-        root.getChildren().add(contornoFerb);
+        LineTo cuelloFerb = new LineTo();
+        cuelloFerb.setX(110);
+        cuelloFerb.setY(90);
+        
+        SiluetaFerb.getElements().add(moveToSilueta);
+        SiluetaFerb.getElements().add(frente);
+        SiluetaFerb.getElements().add(narizArriba);
+        SiluetaFerb.getElements().add(puntaNariz);
+        SiluetaFerb.getElements().add(narizAbajo);
+        SiluetaFerb.getElements().add(narizBoca);
+        SiluetaFerb.getElements().add(labio);
+        SiluetaFerb.getElements().add(cuelloDelante);
+        SiluetaFerb.getElements().add(linea2);
+        SiluetaFerb.getElements().add(cuelloFerb);
+        SiluetaFerb.getElements().add(cerrarSiluetaFerb);
+        
+        SiluetaFerb.setStroke(Color.rgb(197,120,0));
+        SiluetaFerb.setFill(Color.rgb(254,225,200));
+        SiluetaFerb.setStrokeWidth(2);
+        
+        root.getChildren().add(SiluetaFerb);
         
         // OJOS FERB
+        Path ojoFerb2 = new Path();
+        ClosePath cerrarOjo = new ClosePath();
+        
+        MoveTo moveToOjo = new MoveTo();
+        moveToOjo.setX(119);
+        moveToOjo.setY(169);
+        
+        CubicCurveTo ojo = new CubicCurveTo();
+        ojo.setX(148);
+        ojo.setY(187.5);
+        ojo.setControlX1(166);
+        ojo.setControlY1(107);
+        ojo.setControlX2(172);
+        ojo.setControlY2(169);
+        
+        ojoFerb2.getElements().add(moveToOjo);
+        ojoFerb2.getElements().add(ojo);
+        ojoFerb2.getElements().add(cerrarOjo);
+        
+        ojoFerb2.setStroke(Color.BLACK);
+        ojoFerb2.setStrokeWidth(1.7);
+        ojoFerb2.setFill(Color.WHITE);
+        root.getChildren().add(ojoFerb2);
+        
         Ellipse ojoFerb1 = new Ellipse();
         ojoFerb1.setCenterX(116);
         ojoFerb1.setCenterY(157);
@@ -675,22 +725,8 @@ public class ContenedorPrincipal extends Stage {
         ojoFerb1.setRadiusY(19);
         ojoFerb1.setFill(Color.WHITE);
         ojoFerb1.setStroke(Color.BLACK);
-        ojoFerb1.setFill(Color.TRANSPARENT);
         ojoFerb1.setStrokeWidth(1.7);
         ojoFerb1.setRotate(20);
-        
-        CubicCurve ojoFerb2 = new CubicCurve();
-        ojoFerb2.setStartX(134);
-        ojoFerb2.setStartY(151);
-        ojoFerb2.setEndX(148);
-        ojoFerb2.setEndY(186);
-        ojoFerb2.setControlX1(152);
-        ojoFerb2.setControlY1(130);
-        ojoFerb2.setControlX2(180);
-        ojoFerb2.setControlY2(144);
-        ojoFerb2.setStrokeWidth(1.7);
-        ojoFerb2.setStroke(Color.BLACK);
-        ojoFerb2.setFill(Color.TRANSPARENT);
         
         Ellipse pupilaFerb1 = new Ellipse();
         pupilaFerb1.setCenterX(112);
@@ -731,231 +767,160 @@ public class ContenedorPrincipal extends Stage {
         pupilaBlancaFerb2.setStrokeWidth(2);
         
         Group ojosFerb = new Group();
-        ojosFerb.getChildren().addAll(ojoFerb1, ojoFerb2, pupilaFerb1, pupilaFerb2, pupilaBlancaFerb1, pupilaBlancaFerb2);
+        ojosFerb.getChildren().addAll(ojoFerb1, pupilaFerb1, pupilaFerb2, pupilaBlancaFerb1, pupilaBlancaFerb2);
         root.getChildren().add(ojosFerb);
         
+        // PARTES SILUETA FERB
+        Line narizArribaFerb = new Line();
+        narizArribaFerb.setStartX(127);
+        narizArribaFerb.setStartY(174);
+        narizArribaFerb.setEndX(156);
+        narizArribaFerb.setEndY(193);
+        narizArribaFerb.setStrokeWidth(2);
+        narizArribaFerb.setStroke(Color.rgb(197,120,0));
+        root.getChildren().add(narizArribaFerb);
+        
+        QuadCurve labioFerb = new QuadCurve();
+        labioFerb.setStartX(81);
+        labioFerb.setStartY(234);
+        labioFerb.setEndX(96);
+        labioFerb.setEndY(245);
+        labioFerb.setControlX(85);
+        labioFerb.setControlY(240);
+        labioFerb.setStrokeWidth(2);
+        labioFerb.setStroke(Color.rgb(197,120,0));
+        labioFerb.setFill(Color.TRANSPARENT);
+        root.getChildren().add(labioFerb);
+        
+        CubicCurve orejaFerb = new CubicCurve();
+        orejaFerb.setStartX(71);
+        orejaFerb.setStartY(175);
+        orejaFerb.setEndX(78);
+        orejaFerb.setEndY(159);
+        orejaFerb.setControlX1(44);
+        orejaFerb.setControlY1(172);
+        orejaFerb.setControlX2(69);
+        orejaFerb.setControlY2(141);
+        orejaFerb.setStrokeWidth(2);
+        orejaFerb.setStroke(Color.rgb(197,120,0));
+        orejaFerb.setFill(Color.rgb(254,225,200));
+        root.getChildren().add(orejaFerb);
+        
         // CABELLO FERB
-//        Path cabelloFerb = new Path();
-//        
-//        MoveTo moveTo = new MoveTo();
-//        moveTo.setX(145);
-//        moveTo.setY(108);
-//        
-//        CubicCurveTo cabelloFerb21 = new CubicCurveTo();
-//        cabelloFerb21.setX(182);
-//        cabelloFerb21.setY(168);
-//        cabelloFerb21.setControlX1(179);
-//        cabelloFerb21.setControlY1(146);
-//        cabelloFerb21.setControlX2(167);
-//        cabelloFerb21.setControlY2(118);
-//        
-//        CubicCurveTo cabelloFerb22 = new CubicCurveTo();
-//        cabelloFerb22.setX(172);
-//        cabelloFerb22.setY(85);
-//        cabelloFerb22.setControlX1(212);
-//        cabelloFerb22.setControlY1(123);
-//        cabelloFerb22.setControlX2(186);
-//        cabelloFerb22.setControlY2(86);
-//        
-//        CubicCurveTo cabelloFerb23 = new CubicCurveTo();
-//        cabelloFerb23.setX(200);
-//        cabelloFerb23.setY(89);
-//        cabelloFerb23.setControlX1(189);
-//        cabelloFerb23.setControlY1(83);
-//        cabelloFerb23.setControlX2(179);
-//        cabelloFerb23.setControlY2(84);
-//        
-//        ClosePath cerrar = new ClosePath();  
-//        
-//        cabelloFerb.getElements().add(moveTo);
-//        cabelloFerb.getElements().add(cabelloFerb22);
-//        cabelloFerb.getElements().add(cabelloFerb21);
-//        cabelloFerb.getElements().add(cerrar);
-//        
-//        root.getChildren().add(cabelloFerb);
+        Path cabelloFerb = new Path();
+        ClosePath cerrar = new ClosePath();
         
-        CubicCurve cabelloFerb1 = new CubicCurve();
-        cabelloFerb1.setStartX(182);
-        cabelloFerb1.setStartY(168);
-        cabelloFerb1.setEndX(172);
-        cabelloFerb1.setEndY(85);
-        cabelloFerb1.setControlX1(212);
-        cabelloFerb1.setControlY1(123);
-        cabelloFerb1.setControlX2(186);
-        cabelloFerb1.setControlY2(86);
-        cabelloFerb1.setStrokeWidth(2);
-        cabelloFerb1.setStroke(Color.RED);
-        cabelloFerb1.setFill(Color.TRANSPARENT);
+        MoveTo moveTo = new MoveTo();
+        moveTo.setX(182);
+        moveTo.setY(168);
         
-        CubicCurve cabelloFerb2 = new CubicCurve();
-        cabelloFerb2.setStartX(181);
-        cabelloFerb2.setStartY(168);
-        cabelloFerb2.setEndX(145);
-        cabelloFerb2.setEndY(108);
-        cabelloFerb2.setControlX1(179);
-        cabelloFerb2.setControlY1(146);
-        cabelloFerb2.setControlX2(167);
-        cabelloFerb2.setControlY2(118);
-        cabelloFerb2.setStrokeWidth(2);
-        cabelloFerb2.setStroke(Color.RED);
-        cabelloFerb2.setFill(Color.TRANSPARENT);
+        CubicCurveTo cabelloFerb21 = new CubicCurveTo();
+        cabelloFerb21.setX(172);
+        cabelloFerb21.setY(85);
+        cabelloFerb21.setControlX1(212);
+        cabelloFerb21.setControlY1(123);
+        cabelloFerb21.setControlX2(186);
+        cabelloFerb21.setControlY2(86);
         
-        CubicCurve cabelloFerb3 = new CubicCurve();
-        cabelloFerb3.setStartX(198);
-        cabelloFerb3.setStartY(87);
-        cabelloFerb3.setEndX(120);
-        cabelloFerb3.setEndY(79);
-        cabelloFerb3.setControlX1(170);
-        cabelloFerb3.setControlY1(61);
-        cabelloFerb3.setControlX2(121);
-        cabelloFerb3.setControlY2(78);
-        cabelloFerb3.setStrokeWidth(2);
-        cabelloFerb3.setStroke(Color.GREEN);
-        cabelloFerb3.setFill(Color.TRANSPARENT);
-                
-        CubicCurve cabelloFerb4 = new CubicCurve();
-        cabelloFerb4.setStartX(200);
-        cabelloFerb4.setStartY(89);
-        cabelloFerb4.setEndX(170);
-        cabelloFerb4.setEndY(86);
-        cabelloFerb4.setControlX1(189);
-        cabelloFerb4.setControlY1(83);
-        cabelloFerb4.setControlX2(179);
-        cabelloFerb4.setControlY2(84);
-        cabelloFerb4.setStrokeWidth(2);
-        cabelloFerb4.setStroke(Color.RED);
-        cabelloFerb4.setFill(Color.TRANSPARENT);
+        QuadCurveTo cabelloFerb22 = new QuadCurveTo();
+        cabelloFerb22.setX(200);
+        cabelloFerb22.setY(89);
+        cabelloFerb22.setControlX(189);
+        cabelloFerb22.setControlY(83);
         
-        CubicCurve cabelloFerb5 = new CubicCurve();
-        cabelloFerb5.setStartX(124);
-        cabelloFerb5.setStartY(102);
-        cabelloFerb5.setEndX(92);
-        cabelloFerb5.setEndY(115);
-        cabelloFerb5.setControlX1(120);
-        cabelloFerb5.setControlY1(102);
-        cabelloFerb5.setControlX2(103);
-        cabelloFerb5.setControlY2(104);
-        cabelloFerb5.setStrokeWidth(2);
-        cabelloFerb5.setStroke(Color.GREEN);
-        cabelloFerb5.setFill(Color.TRANSPARENT);
+        CubicCurveTo cabelloFerb23 = new CubicCurveTo();
+        cabelloFerb23.setX(120);
+        cabelloFerb23.setY(79);
+        cabelloFerb23.setControlX1(170);
+        cabelloFerb23.setControlY1(61);
+        cabelloFerb23.setControlX2(121);
+        cabelloFerb23.setControlY2(78);
         
-        Line cabelloFerb6 = new Line();
-        cabelloFerb6.setStartX(125);
-        cabelloFerb6.setStartY(102);
-        cabelloFerb6.setEndX(136);
-        cabelloFerb6.setEndY(126);
-        cabelloFerb6.setStrokeWidth(2);
-        cabelloFerb6.setStroke(Color.GREEN);
-        cabelloFerb6.setFill(Color.TRANSPARENT);
+        QuadCurveTo cabelloFerb24 = new QuadCurveTo();
+        cabelloFerb24.setX(108);
+        cabelloFerb24.setY(66);
+        cabelloFerb24.setControlX(115);
+        cabelloFerb24.setControlY(72);
         
-        QuadCurve cabelloFerb7 = new QuadCurve();
-        cabelloFerb7.setStartX(143);
-        cabelloFerb7.setStartY(108);
-        cabelloFerb7.setEndX(138);
-        cabelloFerb7.setEndY(126);
-        cabelloFerb7.setControlX(142);
-        cabelloFerb7.setControlY(115);
-        cabelloFerb7.setStrokeWidth(2);
-        cabelloFerb7.setStroke(Color.GREEN);
-        cabelloFerb7.setFill(Color.TRANSPARENT);
+        QuadCurveTo cabelloFerb25 = new QuadCurveTo();
+        cabelloFerb25.setX(110);
+        cabelloFerb25.setY(78);
+        cabelloFerb25.setControlX(110);
+        cabelloFerb25.setControlY(72);
         
-        QuadCurve cabelloFerb8 = new QuadCurve();
-        cabelloFerb8.setStartX(92);
-        cabelloFerb8.setStartY(115);
-        cabelloFerb8.setEndX(97);
-        cabelloFerb8.setEndY(102);
-        cabelloFerb8.setControlX(90);
-        cabelloFerb8.setControlY(115);
-        cabelloFerb8.setStrokeWidth(2);
-        cabelloFerb8.setStroke(Color.GREEN);
-        cabelloFerb8.setFill(Color.TRANSPARENT);
+        QuadCurveTo cabelloFerb26 = new QuadCurveTo();
+        cabelloFerb26.setX(74);
+        cabelloFerb26.setY(85);
+        cabelloFerb26.setControlX(90);
+        cabelloFerb26.setControlY(72);
         
-        QuadCurve cabelloFerb9 = new QuadCurve();
-        cabelloFerb9.setStartX(97);
-        cabelloFerb9.setStartY(101);
-        cabelloFerb9.setEndX(74);
-        cabelloFerb9.setEndY(107);
-        cabelloFerb9.setControlX(88);
-        cabelloFerb9.setControlY(100);
-        cabelloFerb9.setStrokeWidth(2);
-        cabelloFerb9.setStroke(Color.GREEN);
-        cabelloFerb9.setFill(Color.TRANSPARENT);
+        QuadCurveTo cabelloFerb27 = new QuadCurveTo();
+        cabelloFerb27.setX(94);
+        cabelloFerb27.setY(89);
+        cabelloFerb27.setControlX(79);
+        cabelloFerb27.setControlY(82);
         
-        QuadCurve cabelloFerb10 = new QuadCurve();
-        cabelloFerb10.setStartX(73);
-        cabelloFerb10.setStartY(107);
-        cabelloFerb10.setEndX(95);
-        cabelloFerb10.setEndY(89);
-        cabelloFerb10.setControlX(75);
-        cabelloFerb10.setControlY(97);
-        cabelloFerb10.setStrokeWidth(2);
-        cabelloFerb10.setStroke(Color.GREEN);
-        cabelloFerb10.setFill(Color.TRANSPARENT);
+        QuadCurveTo cabelloFerb28 = new QuadCurveTo();
+        cabelloFerb28.setX(73);
+        cabelloFerb28.setY(107);
+        cabelloFerb28.setControlX(75);
+        cabelloFerb28.setControlY(97);
         
-        QuadCurve cabelloFerb11 = new QuadCurve();
-        cabelloFerb11.setStartX(94);
-        cabelloFerb11.setStartY(89);
-        cabelloFerb11.setEndX(74);
-        cabelloFerb11.setEndY(86);
-        cabelloFerb11.setControlX(79);
-        cabelloFerb11.setControlY(82);
-        cabelloFerb11.setStrokeWidth(2);
-        cabelloFerb11.setStroke(Color.GREEN);
-        cabelloFerb11.setFill(Color.TRANSPARENT);
+        QuadCurveTo cabelloFerb29 = new QuadCurveTo();
+        cabelloFerb29.setX(97);
+        cabelloFerb29.setY(101);
+        cabelloFerb29.setControlX(88);
+        cabelloFerb29.setControlY(100);
         
-        QuadCurve cabelloFerb12 = new QuadCurve();
-        cabelloFerb12.setStartX(110);
-        cabelloFerb12.setStartY(78);
-        cabelloFerb12.setEndX(74);
-        cabelloFerb12.setEndY(85);
-        cabelloFerb12.setControlX(90);
-        cabelloFerb12.setControlY(72);
-        cabelloFerb12.setStrokeWidth(2);
-        cabelloFerb12.setStroke(Color.GREEN);
-        cabelloFerb12.setFill(Color.TRANSPARENT);
+        QuadCurveTo cabelloFerb30 = new QuadCurveTo();
+        cabelloFerb30.setX(92);
+        cabelloFerb30.setY(115);
+        cabelloFerb30.setControlX(90);
+        cabelloFerb30.setControlY(115);
         
-        QuadCurve cabelloFerb13 = new QuadCurve();
-        cabelloFerb13.setStartX(110);
-        cabelloFerb13.setStartY(78);
-        cabelloFerb13.setEndX(108);
-        cabelloFerb13.setEndY(66);
-        cabelloFerb13.setControlX(110);
-        cabelloFerb13.setControlY(72);
-        cabelloFerb13.setStrokeWidth(2);
-        cabelloFerb13.setStroke(Color.GREEN);
-        cabelloFerb13.setFill(Color.TRANSPARENT);
+        QuadCurveTo cabelloFerb31 = new QuadCurveTo();
+        cabelloFerb31.setX(124);
+        cabelloFerb31.setY(102);
+        cabelloFerb31.setControlX(103);
+        cabelloFerb31.setControlY(104);
         
-        QuadCurve cabelloFerb14 = new QuadCurve();
-        cabelloFerb14.setStartX(120);
-        cabelloFerb14.setStartY(79);
-        cabelloFerb14.setEndX(108);
-        cabelloFerb14.setEndY(66);
-        cabelloFerb14.setControlX(115);
-        cabelloFerb14.setControlY(72);
-        cabelloFerb14.setStrokeWidth(2);
-        cabelloFerb14.setStroke(Color.GREEN);
-        cabelloFerb14.setFill(Color.TRANSPARENT);
+        LineTo cabelloFerb32 = new LineTo();
+        cabelloFerb32.setX(136);
+        cabelloFerb32.setY(126);
         
-        Group cabelleraFerb = new Group();
-        cabelleraFerb.getChildren().addAll(cabelloFerb1);
-        cabelleraFerb.getChildren().addAll(cabelloFerb2);
-        cabelleraFerb.getChildren().addAll(cabelloFerb3);
-        cabelleraFerb.getChildren().addAll(cabelloFerb4);
-        cabelleraFerb.getChildren().addAll(cabelloFerb5);
-        cabelleraFerb.getChildren().addAll(cabelloFerb6);
-        cabelleraFerb.getChildren().addAll(cabelloFerb7);
-        cabelleraFerb.getChildren().addAll(cabelloFerb8);
-        cabelleraFerb.getChildren().addAll(cabelloFerb9);
-        cabelleraFerb.getChildren().addAll(cabelloFerb10);
-        cabelleraFerb.getChildren().addAll(cabelloFerb11);
-        cabelleraFerb.getChildren().addAll(cabelloFerb12);
-        cabelleraFerb.getChildren().addAll(cabelloFerb13);
-        cabelleraFerb.getChildren().addAll(cabelloFerb14);
+        QuadCurveTo cabelloFerb33 = new QuadCurveTo();
+        cabelloFerb33.setX(143);
+        cabelloFerb33.setY(108);
+        cabelloFerb33.setControlX(142);
+        cabelloFerb33.setControlY(115);
         
-        root.getChildren().add(cabelleraFerb);
+        QuadCurveTo cabelloFerb34 = new QuadCurveTo();
+        cabelloFerb34.setX(181);
+        cabelloFerb34.setY(168);
+        cabelloFerb34.setControlX(167);
+        cabelloFerb34.setControlY(118);
         
+        cabelloFerb.getElements().add(moveTo);
+        cabelloFerb.getElements().add(cabelloFerb21);
+        cabelloFerb.getElements().add(cabelloFerb22);
+        cabelloFerb.getElements().add(cabelloFerb23);
+        cabelloFerb.getElements().add(cabelloFerb24);
+        cabelloFerb.getElements().add(cabelloFerb25);
+        cabelloFerb.getElements().add(cabelloFerb26);
+        cabelloFerb.getElements().add(cabelloFerb27);
+        cabelloFerb.getElements().add(cabelloFerb28);
+        cabelloFerb.getElements().add(cabelloFerb29);
+        cabelloFerb.getElements().add(cabelloFerb30);
+        cabelloFerb.getElements().add(cabelloFerb31);
+        cabelloFerb.getElements().add(cabelloFerb32);
+        cabelloFerb.getElements().add(cabelloFerb33);
+        cabelloFerb.getElements().add(cabelloFerb34);
         
+        cabelloFerb.setStroke(Color.DARKGREEN);
+        cabelloFerb.setStrokeWidth(2);
+        cabelloFerb.setFill(Color.rgb(55,165,54));
         
+        root.getChildren().add(cabelloFerb);
         
         // DEDOS FERB
         Ellipse dedoFerb1 = new Ellipse(); 
@@ -963,10 +928,8 @@ public class ContenedorPrincipal extends Stage {
         dedoFerb1.setCenterY(190);
         dedoFerb1.setRadiusX(10);
         dedoFerb1.setRadiusY(8);
-        //dedoFerb1.setFill(Color.rgb(252,227,199));
-        dedoFerb1.setFill(Color.WHITE);
-        //dedoFerb1.setStroke(Color.RED);
         dedoFerb1.setStroke(Color.rgb(251,193,137));
+        dedoFerb1.setFill(Color.rgb(254,225,200));
         dedoFerb1.setStrokeWidth(1.7);
         dedoFerb1.setRotate(328);
         
@@ -975,10 +938,8 @@ public class ContenedorPrincipal extends Stage {
         dedoFerb2.setCenterY(200);
         dedoFerb2.setRadiusX(9);
         dedoFerb2.setRadiusY(5.5);
-        //dedoFerb2.setFill(Color.rgb(252,227,199));
-        dedoFerb2.setFill(Color.WHITE);
-        //dedoFerb2.setStroke(Color.RED);
         dedoFerb2.setStroke(Color.rgb(251,193,137));
+        dedoFerb2.setFill(Color.rgb(254,225,200));
         dedoFerb2.setStrokeWidth(1.7);
         dedoFerb2.setRotate(345);
         
@@ -987,10 +948,8 @@ public class ContenedorPrincipal extends Stage {
         dedoFerb3.setCenterY(210);
         dedoFerb3.setRadiusX(9);
         dedoFerb3.setRadiusY(6);
-        //dedoFerb3.setFill(Color.rgb(252,227,199));
-        dedoFerb3.setFill(Color.WHITE);
         dedoFerb3.setStroke(Color.rgb(251,193,137));
-        //dedoFerb3.setStroke(Color.rgb(251,193,137));
+        dedoFerb3.setFill(Color.rgb(254,225,200));
         dedoFerb3.setStrokeWidth(1.7);
         dedoFerb3.setRotate(350);
         
@@ -999,10 +958,8 @@ public class ContenedorPrincipal extends Stage {
         dedoFerb4.setCenterY(232);
         dedoFerb4.setRadiusX(10);
         dedoFerb4.setRadiusY(8);
-        //dedoFerb4.setFill(Color.rgb(252,227,199));
-        dedoFerb4.setFill(Color.WHITE);
-        //dedoFerb4.setStroke(Color.RED);
         dedoFerb4.setStroke(Color.rgb(251,193,137));
+        dedoFerb4.setFill(Color.rgb(254,225,200));
         dedoFerb4.setStrokeWidth(1.7);
         dedoFerb4.setRotate(5);
         
@@ -1011,10 +968,8 @@ public class ContenedorPrincipal extends Stage {
         dedoFerb5.setCenterY(240);
         dedoFerb5.setRadiusX(9);
         dedoFerb5.setRadiusY(5.5);
-        //dedoFerb5.setFill(Color.rgb(252,227,199));
-        dedoFerb5.setFill(Color.WHITE);
-        //dedoFerb5.setStroke(Color.RED);
         dedoFerb5.setStroke(Color.rgb(251,193,137));
+        dedoFerb5.setFill(Color.rgb(254,225,200));
         dedoFerb5.setStrokeWidth(1.7);
         dedoFerb5.setRotate(345);
         
@@ -1023,15 +978,47 @@ public class ContenedorPrincipal extends Stage {
         dedoFerb6.setCenterY(250);
         dedoFerb6.setRadiusX(9);
         dedoFerb6.setRadiusY(6);
-        //dedoFerb6.setFill(Color.rgb(252,227,199));
-        dedoFerb6.setFill(Color.WHITE);
         dedoFerb6.setStroke(Color.rgb(251,193,137));
-        //dedoFerb6.setStroke(Color.rgb(251,193,137));
+        dedoFerb6.setFill(Color.rgb(254,225,200));
         dedoFerb6.setStrokeWidth(1.7);
         dedoFerb6.setRotate(350);
         
         Group dedosFerb = new Group();
         dedosFerb.getChildren().addAll(dedoFerb1, dedoFerb2, dedoFerb3, dedoFerb4, dedoFerb5, dedoFerb6);
         root.getChildren().add(dedosFerb);
+        
+        Path sombraCabello1 = new Path();
+        ClosePath cerrarSombra1 = new ClosePath();
+        
+        MoveTo moveToSombra1 = new MoveTo();
+        moveToSombra1.setX(141);
+        moveToSombra1.setY(98);
+        
+        LineTo sombra1 = new LineTo();
+        sombra1.setX(144);
+        sombra1.setY(108);
+        
+        QuadCurveTo sombra2 = new QuadCurveTo();
+        sombra2.setX(182);
+        sombra2.setY(165);
+        sombra2.setControlX(170);
+        sombra2.setControlY(120);
+        
+        CubicCurveTo sombra3 = new CubicCurveTo();
+        sombra3.setX(141);
+        sombra3.setY(98);
+        sombra3.setControlX1(197);
+        sombra3.setControlY1(116);
+        sombra3.setControlX2(160);
+        sombra3.setControlY2(98);
+        
+        sombraCabello1.getElements().add(moveToSombra1);
+        sombraCabello1.getElements().add(sombra1);
+        sombraCabello1.getElements().add(sombra2);
+        sombraCabello1.getElements().add(sombra3);
+        
+        sombraCabello1.setStroke(Color.rgb(35,129,13));
+        sombraCabello1.setFill(Color.rgb(35,129,13));
+        root.getChildren().add(sombraCabello1);
     }
 }
