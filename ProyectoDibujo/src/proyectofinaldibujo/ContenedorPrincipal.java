@@ -562,7 +562,7 @@ public class ContenedorPrincipal extends Stage {
         dedoPhineas1.setCenterY(369);
         dedoPhineas1.setRadiusX(8);
         dedoPhineas1.setRadiusY(4);
-        dedoPhineas1.setStroke(Color.rgb(251,193,137));
+        dedoPhineas1.setStroke(Color.rgb(201,125,0));
         dedoPhineas1.setFill(Color.rgb(254,225,200));
         dedoPhineas1.setStrokeWidth(1.7);
         dedoPhineas1.setRotate(5);
@@ -573,7 +573,7 @@ public class ContenedorPrincipal extends Stage {
         dedoPhineas2.setCenterY(377);
         dedoPhineas2.setRadiusX(9);
         dedoPhineas2.setRadiusY(5);
-        dedoPhineas2.setStroke(Color.rgb(251,193,137));
+        dedoPhineas2.setStroke(Color.rgb(201,125,0));
         dedoPhineas2.setFill(Color.rgb(254,225,200));
         dedoPhineas2.setStrokeWidth(1.7);
         dedoPhineas2.setRotate(355);
@@ -584,7 +584,7 @@ public class ContenedorPrincipal extends Stage {
         dedoPhineas3.setCenterY(385);
         dedoPhineas3.setRadiusX(8);
         dedoPhineas3.setRadiusY(4);
-        dedoPhineas3.setStroke(Color.rgb(251,193,137));
+        dedoPhineas3.setStroke(Color.rgb(201,125,0));
         dedoPhineas3.setFill(Color.rgb(254,225,200));
         dedoPhineas3.setStrokeWidth(1.7);
         dedoPhineas3.setRotate(350);
@@ -595,7 +595,7 @@ public class ContenedorPrincipal extends Stage {
         dedoPhineas4.setCenterY(402.5);
         dedoPhineas4.setRadiusX(8);
         dedoPhineas4.setRadiusY(4);
-        dedoPhineas4.setStroke(Color.rgb(251,193,137));
+        dedoPhineas4.setStroke(Color.rgb(201,125,0));
         dedoPhineas4.setFill(Color.rgb(254,225,200));
         dedoPhineas4.setStrokeWidth(1.7);
         dedoPhineas4.setRotate(355);
@@ -606,7 +606,7 @@ public class ContenedorPrincipal extends Stage {
         dedoPhineas5.setCenterY(412);
         dedoPhineas5.setRadiusX(9);
         dedoPhineas5.setRadiusY(5);
-        dedoPhineas5.setStroke(Color.rgb(251,193,137));
+        dedoPhineas5.setStroke(Color.rgb(201,125,0));
         dedoPhineas5.setFill(Color.rgb(254,225,200));
         dedoPhineas5.setStrokeWidth(1.7);
         dedoPhineas5.setRotate(348);
@@ -617,7 +617,7 @@ public class ContenedorPrincipal extends Stage {
         dedoPhineas6.setCenterY(420);
         dedoPhineas6.setRadiusX(8);
         dedoPhineas6.setRadiusY(4);
-        dedoPhineas6.setStroke(Color.rgb(251,193,137));
+        dedoPhineas6.setStroke(Color.rgb(201,125,0));
         dedoPhineas6.setFill(Color.rgb(254,225,200));
         dedoPhineas6.setStrokeWidth(1.7);
         dedoPhineas6.setRotate(350);
@@ -928,7 +928,7 @@ public class ContenedorPrincipal extends Stage {
         dedoFerb1.setCenterY(190);
         dedoFerb1.setRadiusX(10);
         dedoFerb1.setRadiusY(8);
-        dedoFerb1.setStroke(Color.rgb(251,193,137));
+        dedoFerb1.setStroke(Color.rgb(201,125,0));
         dedoFerb1.setFill(Color.rgb(254,225,200));
         dedoFerb1.setStrokeWidth(1.7);
         dedoFerb1.setRotate(328);
@@ -938,7 +938,7 @@ public class ContenedorPrincipal extends Stage {
         dedoFerb2.setCenterY(200);
         dedoFerb2.setRadiusX(9);
         dedoFerb2.setRadiusY(5.5);
-        dedoFerb2.setStroke(Color.rgb(251,193,137));
+        dedoFerb2.setStroke(Color.rgb(201,125,0));
         dedoFerb2.setFill(Color.rgb(254,225,200));
         dedoFerb2.setStrokeWidth(1.7);
         dedoFerb2.setRotate(345);
@@ -948,7 +948,7 @@ public class ContenedorPrincipal extends Stage {
         dedoFerb3.setCenterY(210);
         dedoFerb3.setRadiusX(9);
         dedoFerb3.setRadiusY(6);
-        dedoFerb3.setStroke(Color.rgb(251,193,137));
+        dedoFerb3.setStroke(Color.rgb(201,125,0));
         dedoFerb3.setFill(Color.rgb(254,225,200));
         dedoFerb3.setStrokeWidth(1.7);
         dedoFerb3.setRotate(350);
@@ -958,7 +958,7 @@ public class ContenedorPrincipal extends Stage {
         dedoFerb4.setCenterY(232);
         dedoFerb4.setRadiusX(10);
         dedoFerb4.setRadiusY(8);
-        dedoFerb4.setStroke(Color.rgb(251,193,137));
+        dedoFerb4.setStroke(Color.rgb(201,125,0));
         dedoFerb4.setFill(Color.rgb(254,225,200));
         dedoFerb4.setStrokeWidth(1.7);
         dedoFerb4.setRotate(5);
@@ -968,7 +968,7 @@ public class ContenedorPrincipal extends Stage {
         dedoFerb5.setCenterY(240);
         dedoFerb5.setRadiusX(9);
         dedoFerb5.setRadiusY(5.5);
-        dedoFerb5.setStroke(Color.rgb(251,193,137));
+        dedoFerb5.setStroke(Color.rgb(201,125,0));
         dedoFerb5.setFill(Color.rgb(254,225,200));
         dedoFerb5.setStrokeWidth(1.7);
         dedoFerb5.setRotate(345);
@@ -978,7 +978,7 @@ public class ContenedorPrincipal extends Stage {
         dedoFerb6.setCenterY(250);
         dedoFerb6.setRadiusX(9);
         dedoFerb6.setRadiusY(6);
-        dedoFerb6.setStroke(Color.rgb(251,193,137));
+        dedoFerb6.setStroke(Color.rgb(201,125,0));
         dedoFerb6.setFill(Color.rgb(254,225,200));
         dedoFerb6.setStrokeWidth(1.7);
         dedoFerb6.setRotate(350);
@@ -1016,9 +1016,10 @@ public class ContenedorPrincipal extends Stage {
         sombraCabello1.getElements().add(sombra1);
         sombraCabello1.getElements().add(sombra2);
         sombraCabello1.getElements().add(sombra3);
+        sombraCabello1.getElements().add(cerrarSombra1);
         
         sombraCabello1.setStroke(Color.rgb(35,129,13));
         sombraCabello1.setFill(Color.rgb(35,129,13));
-        root.getChildren().add(sombraCabello1);
+        //root.getChildren().add(sombraCabello1);
     }
 }
